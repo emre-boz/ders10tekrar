@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client';
 import C1 from './components/C1'
 import Cobje from './components/Cobje';
 import Uyarimasu from './components/Uyarimasu';
+import Degisken from './components/Degisken';
 
 function uyari(){
 alert("Dikkat!");
 }
+
+const degisken="degisken lo";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +20,7 @@ root.render(
   <C1 mesaj="mesajabivc" />
   <C1 mesaj={[2, 51, 73, 90]} />
   <Cobje susaj={{ad:"Emre", soyad:"Boz"}} />
+  <Degisken degisken1={degisken}/>
 
   {console.log("emrelerde incek var.")}
   {5+6}
